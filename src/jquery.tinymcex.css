@@ -1,0 +1,35 @@
+.ui-tinymcex-content
+{
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+.ui-tinymcex-controls
+{
+    background: rgba(226,226,226,1);
+    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: right;
+}
+.ui-tinymcex-control
+{
+    color: #3F3F3F;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    margin-left: 5px;
+    line-height: 20px;
+    padding: 5px;
+}
+.ui-tinymcex-control:hover
+{
+    color: #353535;
+    background-color: #ECECEC;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Dynamic Text Editor</title>
+<link rel="stylesheet" href="lib/jquery-ui-1.8.7.custom2/css/custom-theme/jquery-ui-1.8.7.custom.css" type="text/css" />
+<link rel="stylesheet" href="lib/css/jquery.tinymcex.css" type="text/css" />
+<style type="text/css">
+    .tinymcex
+    {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="tinymcex" id="content">
+        <textarea><p>Content one</p></textarea>
+    </div>
+    <div id="content2" class="tinymcex">Content two</div>
+    <div><button id="print">Print contents</button></div>
+    <div><button id="options">Print contents</button></div>
+    <div id="log"></div>
+    <script type="text/javascript" src="lib/js/jquery.1.10.2.min.js"></script>
+    <script type="text/javascript" src="lib/js/jquery-ui-1.8.7.custom.min.js"></script>
+    <script type='text/javascript' src='lib/tinymce/jscripts/tiny_mce/jquery.tinymce.js'></script>
+    <script type="text/javascript" src="lib/js/jquery.tinymcex.js"></script>
+    <script>
+        $(function(){
+             $('#content').tinymcex();
+             $('#content2').tinymcex();
+             $('#print').click(function(){
+                 $('#log').html('');
+                $('.tinymcex').each(function(){
+                    console.log($(this).tinymcex('getContent'));
+                    $('#log').append("<p>"+$(this).attr('id')+": '"+$(this).tinymcex('getContent')+"'</p>");
+                });
+             });
+             $("#options").click(function(){
+                 $(".tinymcex").each(function(){
+                     console.log($(this).tinymcex('option', 'editor'));
+                 });
+             });
+            
+        });
+    </script>
+</body>
+</html>
