@@ -1,5 +1,5 @@
 {
-  "name": "jquery-tinymcex",
+  "name": "jquery.tinymcex",
   "version": "0.0.0",
   "description": "TinyMCE UI Widget Extension",
   "main": "jquery.tinymcex.js",
@@ -26,6 +26,7 @@
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-uglify": "~0.2.2"
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.6.2"
   }
 }
