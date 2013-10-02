@@ -1,0 +1,31 @@
+{
+  "name": "jquery-tinymcex",
+  "version": "0.0.0",
+  "description": "TinyMCE UI Widget Extension",
+  "main": "jquery.tinymcex.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cladera/jquery-tinymcex.git"
+  },
+  "keywords": [
+    "jquery",
+    "ui",
+    "tinymce",
+    "editor",
+    "javascript"
+  ],
+  "author": "Carlos Galan Cladera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cladera/jquery-tinymcex/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2"
+  }
+}
